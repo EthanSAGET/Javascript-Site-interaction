@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #131416;
+    padding: 50px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 24px;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+.card{
+    position: relative;
+    padding-bottom: 150%;
+}
+
+.card-background{
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    border-radius: 24px;
+    filter: brightness(.75) saturate(1.2) contrast(.85);
+    transition: .3s;
+}
+
+.card-content{
+    position: absolute;
+    padding: 24px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+
+}
+
+.card-content p {
+    color: rgba(255, 255, 255, .6);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.card-content h3{
+    font-size: 1.9rem;
+    color: white;
+}
+
+.card:hover .card-background {
+    transform: scale(1.05);
+}
+
+.cards:hover > .card:not(:hover) > .card-background{
+    filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
+
+}
+
+@media(min-width : 540px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+
+
+
+
+.footer{
+    background-color: none;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.item-flexbox{
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 100px 0px;
+}
+
+.footer i {
+    color: white;
+    font-size:100px;
+}
+
+.mail{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+.footer-tittle{
+    justify-content: center;
+    color: white;
+    
+}
+
+@media(min-width : 960px) {
+    .cards{
+        grid-template-columns: repeat(4,1fr);
+    }
+}

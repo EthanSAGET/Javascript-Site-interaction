@@ -1,0 +1,32 @@
+.footer{
+    background-color: black;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-flexbox{
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 100px 0px;
+}
+
+.footer i {
+    color: white;
+    font-size:100px;
+}
+
+.mail{
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    
+}
+
+.footer-tittle{
+    justify-content: center;
+    color: white;
+    
+}

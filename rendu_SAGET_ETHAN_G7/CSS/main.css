@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+ h1{
+    font-family: 'Kanit', sans-serif;
+ }
+ p{
+    font-family: 'Kanit', sans-serif;
+ }
+
+ @media only screen and (max-width: 700px){
+    .btn-test{
+        font-size: 1rem;
+    }
+    .titre{
+        font-size: 2rem;
+    }
+    .sous-titre{
+        font-size: 1rem;
+    }
+    i{
+        font-size: 50px;
+    }
+    .flex-img{
+        display: none;
+    }
+    .footer i {
+        font-size: 50px;
+    }
+}

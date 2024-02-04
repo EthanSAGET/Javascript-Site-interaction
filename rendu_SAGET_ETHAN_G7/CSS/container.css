@@ -1,0 +1,43 @@
+.container{
+    padding: 0px 130px;
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+      margin: 1em 2em;
+    }
+  }
+
+.container .flex-container{
+    margin-top: 110px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px gray;
+    position: relative;
+    display: flex;
+}
+
+.flex-items{
+    flex-wrap: wrap;
+    padding: 100px 100px;
+    justify-content:space-evenly;
+    margin-right: 10px;
+}
+
+.flex-text{
+    color: white;
+    padding: 5px 10px;
+    border-right: solid white;
+    border-radius: 100px;
+
+}
+
+.flex-items.flex-img{
+    padding: 30px 50px;
+    margin-right: 10px;
+   object-fit: cover;
+   margin-bottom: 5px;
+   width: 100%;
+}
+
+
