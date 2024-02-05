@@ -1,25 +1,28 @@
-
-
-
+/* Réinitialisation des styles */
 * {
     padding: 0;
     margin: 0;
     font-family: "Segoe UI";
   }
+  
+  /* Suppression des puces des listes */
   li {
     list-style: none;
   }
-  a,
-  a:visited {
+  
+  /* Styles pour les liens */
+  a, a:visited {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
   }
+  
+  /* Styles lorsque la souris survole un lien */
   a:hover {
     color: white;
   }
   
-  /**** NAVBAR ****/
+  /* Styles pour la barre de navigation (NAVBAR) */
   nav {
     background: burlywood;
     display: flex;
@@ -28,26 +31,38 @@
     padding: 10px;
     font-size: calc(0.5rem + 1.5vw);
   }
+  
+  /* Styles pour la liste à l'intérieur de la barre de navigation */
   nav ul {
     display: flex;
     justify-content: space-between;
     width: 70%;
   }
+  
+  /* Styles pour les icônes (peut-être un bouton de menu) */
   #icons {
     cursor: pointer;
     display: none;
   }
   
+  /* Media Query pour les écrans plus petits (720 pixels ou moins) */
   @media (max-width: 720px) {
+    /* Affiche les icônes (peut-être un bouton de menu) */
     #icons {
       display: block;
     }
+  
+    /* Styles pour la liste à l'intérieur de la barre de navigation sur les écrans plus petits */
     #icons:before {
-      content: "\2630";
+      content: "\2630"; /* Affiche une icône de menu (trois lignes) */
     }
+  
+    /* Styles lorsque la barre de navigation est active sur les écrans plus petits */
     .active #icons:before {
-      content: "\2715";
+      content: "\2715"; /* Affiche une icône de fermeture (croix) */
     }
+  
+    /* Styles pour la liste à l'intérieur de la barre de navigation sur les écrans plus petits */
     nav ul {
       position: fixed;
       left: -100%;
@@ -58,16 +73,22 @@
       text-align: center;
       transition: 0.25s;
     }
+  
+    /* Styles pour chaque élément de la liste lorsqu'il est survolé sur les écrans plus petits */
     nav li {
       padding: 3px 0;
     }
+  
+    /* Styles pour le survol d'un élément de la liste sur les écrans plus petits */
     nav li:hover {
       background: rgb(240, 203, 156);
     }
+  
+    /* Styles lorsque la barre de navigation est active sur les écrans plus petits */
     nav.active ul {
       left: 0;
     }
   }
-
-
-  /***Contenue***/
+  
+  /* Contenu (peut être ajouté ici si nécessaire) */
+  

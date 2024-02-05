@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header id="header">
       <div class="logo">
         <img src="../image/Logo réseau social .png" alt="" class="img_logo" />
-
       </div>
     </header>
 
@@ -30,12 +29,21 @@
             </div>
             <div class="form-group">
               <input
+                type="text"
+                class="form-control"
+                name="adresse"
+                placeholder="Votre adresse"
+              />
+            </div>
+            <div class="form-group">
+              <input
                 type="email"
                 class="form-control"
                 name="email"
                 placeholder="Votre adresse mail"
               />
             </div>
+            <div class="form-group"></div>
             <div class="form-group">
               <input
                 type="password"
@@ -43,6 +51,25 @@
                 name="mdp"
                 placeholder="Votre mot de passe"
               />
+            </div>
+            <div class="form-group text-center">
+              <select name="country" id="country">
+                <option id="selectionnez">selectionnez un pays</option>
+                <option value="Français">Français</option>
+                <option value="Français">Tunisien</option>
+                <option value="Français">Allemand</option>
+                <option value="Français">Comorien</option>
+                <option value="Français">Vietnamien</option>
+                <option value="Français">Belge</option>
+                <option value="Français">Portugais</option>
+                <option value="Français">Cambodge</option>
+                <option value="Français">Chinois</option>
+                <option value="Français">Algérie</option>
+                <option value="Français">Maroc</option>
+                <option value="Français">Sénégal</option>
+                <option value="Français">Colombie</option>
+                <option value="Français">Bulgarie</option>
+              </select>
             </div>
             <div class="form-group text-center">
               <input type="submit" class="btn btn-primary" value="S'inscrire" />
